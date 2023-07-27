@@ -27,9 +27,9 @@
 <body class="font-lato">
     <header class="h-[120px] w-full px-20">
         <!-- navbar -->
-        <div class="flex flex-row-3  bg-[#F85559] rounded-full mt-10 justify-center text-white items-center px-20 py-5">
+        <div class="flex flex-row-3 rounded-full mt-10 justify-center items-center px-20 py-5 md:text-black mb-10 lg:text-white md:bg-white lg:bg-[#F85559] ">
                 <div class="navbar ">
-                    <div class="navbar-start lg:flex flex-auto">
+                    <div class="items-stretch hidden space-x-2 lg:flex">
                     <ul class="menu menu-horizontal px-1 font-normal">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
               
-              <div class="navbar-center flex items-center pr-60">
+              <div class=" flex pr-20 lg:pr-40 items-center navbar-center">
                   <div>
                     <img src="images/logo.png" alt="">
                   </div> 
@@ -48,7 +48,7 @@
                 </div>
              </div>
              <div class="flex items-center">
-                <div class="relative block">
+                <div class="relative hidden lg:block ">
                   <input type="" name="" placeholder=" search here" class="w-40 pl-12 py-2 rounded-full text-sm sm:w-auto focus:outline-none " />
                   <span class="absolute right-3 top-1">
                     <button type="submit" title="Search" class="p-1 focus:outline-none focus:ring">
@@ -57,13 +57,29 @@
                   </span>
                 </div>
               </div>
+              <button title="Open menu" type="button" class=" pr-10 lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-6 h-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+
+
         </div>
 
     </header>
 
     <main>
         <!-- banner section -->
-        <section class="py-20 px-20 h-auto">
+        <section class="w-auto lg:py-20 px-20 h-auto">
             <div class="carousel w-full">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -120,7 +136,8 @@
             </div>
 
             <!-- item container -->
-            <div class="flex w-4/5 h-64 mx-auto justify-between  items-center position:relative -top-20 relative rounded-lg bg-slate-50 p-5">
+            <div class="hidden lg:block">
+              <div class="flex w-4/5 h-64 mx-auto justify-between items-center position:relative -top-20 relative rounded-lg bg-slate-50 p-5">
                 <div class="text-center">
                     <img src="images/fruit1.png" alt="">
                     <p>Grape</p>
@@ -148,18 +165,19 @@
                 </div>
 
             </div>
+            </div>
         </section>
 
         <!-- deal sectioon -->
         <section class="px-20">
-            <div class="flex flex-col md:flex-row justify-center items-center md:justify-between gap-5">
+            <div class="flex flex-col md:flex-row lg:flex-row justify-center items-center md:justify-between gap-5">
                 <div class="md:max-w-[50%] text-center md:text-justify">
                     <h2 class="text-5xl py-4 font-extrabold text-[#121212]">Deal of the day</h2>
                     <p class="text-base font-medium py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
                      Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <!-- Deal Timer -->
-                <div class="flex gap-4 mx-auto md:mx-0 text-center">
+                <div class="flex gap-0 lg:gap-4 mx-auto md:mx-0 text-center">
                     <div>
                         <h2 class="text-3xl font-extrabold">29</h2>
                         <p class="font-medium text-gray-400">Days</p>
@@ -197,7 +215,7 @@
                 </div>
             </div>
                     
-            <div class="grid grid-cols-4 ">
+            <div class="grid grid-cols-1 lg:grid-cols-4 ">
                 <!-- Apple -->
                 <div class="card w-auto space-y-3 m-4 text-center items-center shadow-lg">
                     <div class="p-5 rounded-2xl">
@@ -286,14 +304,14 @@
 
         </section>
         <!-- Team Section -->
-        <section class="px-20">
+        <section class="px-20 rounded-lg">
             <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md">
                     <h1 class="mb-5 text-5xl font-bold text-center text-white">Meet the team section</h1>
                     <p class="mb-5 font-medium text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                    <div class="flex justify-evenly">
+                    <div class="flex lg:flex justify-evenly">
                         <div class="card text-center p-5 mx-auto">
                             <img class="w-40 h-24" src="images/member1.png" alt="" class="w-full">
                             <h3 class="font-bold text-2xl text-[#FFF]">Awlad Hossain</h3>
@@ -480,7 +498,7 @@
                     text. It has roots in a piece of classical <br> Latin
                     literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="grid grid-cols-3 gap-20">
+            <div class="grid grid-col-1 lg:grid-cols-3 gap-20">
                 <div class="order-1">
                     <div class="flex flex-row justify-center items-center space-x-6">
                         <a href="">
@@ -617,7 +635,7 @@
             <img src="images/logo.png" alt="icon">
             <h1 class="font-bold text-4xl text-white">Fruit Burst</h1>
         </div>
-        <div class="grid grid-flow-col text-white gap-8">
+        <div class="flex flex-wrap items-center justify-center p-10 text-white gap-8">
             <a class="">Home</a> 
             <a class="">About Us</a> 
             <a class="">Shop</a> 
